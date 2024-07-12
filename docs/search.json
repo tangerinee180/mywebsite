@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "testwebsite",
+    "section": "",
+    "text": "Anyone can learn anything with a proper education.\n- Issac Lee, 2023"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "index.html#홈페이지-첫-화면입니다",
+    "href": "index.html#홈페이지-첫-화면입니다",
+    "title": "testwebsite",
+    "section": "홈페이지 첫 화면입니다!",
+    "text": "홈페이지 첫 화면입니다!\n안녕하세요, 데이터 분석 허접 이용규입니다.\n###오늘 배운 것\nmath 함수 &lt;- math.fucntion\nsqrt exp sin cos log\narray[] &lt;- 벡터(집합 만들 수 있음)\narange(x,y,z) &lt;- x 부터 y 까지 z간격으로\nlinspace(x,y,z) &lt;- x y z\ntile repeat\nnp.repeat(array,num) np.tile(array,num)"
+  }
+]

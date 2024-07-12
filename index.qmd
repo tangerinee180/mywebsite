@@ -3,10 +3,36 @@ title: "testwebsite"
 jupyter: python3
 ---
 
-This is a Quarto website.
+> Anyone can learn anything with a proper education.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+\- **`Issac Lee, 2023`**
 
-```{python}
-1 + 1
-```
+
+
+## 홈페이지 첫 화면입니다!
+
+안녕하세요, 데이터 분석 **허접** 이용규입니다.
+
+###오늘 배운 것 
+
+math 함수 <- math.fucntion            
+sqrt
+exp
+sin
+cos
+log
+
+
+array[] <- 벡터(집합 만들 수 있음)
+
+arange(x,y,z) <- x 부터 y 까지 z간격으로 
+
+
+linspace(x,y,z) <- x y z
+
+tile repeat
+
+np.repeat(array,num)
+np.tile(array,num)
+
+
