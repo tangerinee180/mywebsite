@@ -1,15 +1,11 @@
 ---
-title: "testwebsite"
+title: "HW1"
 jupyter: python3
 ---
 
 > Anyone can learn anything with a proper education.
 
 \- **`Issac Lee, 2023`**
-
-## 홈페이지 첫 화면입니다!
-
-### 안녕하세요, **:):)** 이용규입니다.
 
 ### Q1. 다음 표의 내용을 데이터 프레임으로 만들어 출력해 보세요.
 
