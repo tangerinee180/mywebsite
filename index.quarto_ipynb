@@ -1,0 +1,141 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"testwebsite\"\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "> Anyone can learn anything with a proper education.\n",
+        "\n",
+        "\\- **`Issac Lee, 2023`**\n",
+        "\n",
+        "## 홈페이지 첫 화면입니다!\n",
+        "\n",
+        "### 안녕하세요, **:):)** 이용규입니다.\n",
+        "\n",
+        "### Q1. 다음 표의 내용을 데이터 프레임으로 만들어 출력해 보세요.\n",
+        "\n",
+        "### Q2. 앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과 판매량 평균을 구해 보세요. P84\n"
+      ],
+      "id": "cd54caf6"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "df = pd.DataFrame({\"제품\" : [\"사과\",\"딸기\",\"수박\"], \"판매량\" : [1800,1500,3000], \"가격\" : [24,38,13]} )\n",
+        "\n",
+        "mean_price = sum(df[\"판매량\"])/len(df) \n",
+        "mean_sold = sum(df[\"가격\"])/len(df)"
+      ],
+      "id": "1d06899d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### \n",
+        "\n",
+        "### Q3,Q4,Q5 mpg 데이터를 이용해 분석 문제를 해결해 보세요. P115\n"
+      ],
+      "id": "acb0f491"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "df = pd.read_csv(\"mpg.csv\")\n",
+        "cmpg = df.copy()\n",
+        "cmpg = cmpg.rename(columns = {\"cty\": \"city\",\"hwy\":\"highway\"})\n",
+        "cmpg"
+      ],
+      "id": "331e5811",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Q6\\~Q10 P130\n"
+      ],
+      "id": "e4957de3"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt \n",
+        "import seaborn\n",
+        "import numpy as np    \n",
+        "\n",
+        "midwest = pd.read_csv(\"midwest.csv\")\n",
+        "midwest.info\n",
+        "mw = midwest.copy()\n",
+        "mw = mw.rename(columns = {\"poptotal\":\"total\",\"popasian\":\"asian\"})\n",
+        "mw[\"asian_percent\"] = mw[\"asian\"]/mw[\"total\"]*100\n",
+        "mw[\"asian_percent\"].plot.bar(rot=0)\n",
+        "plt.show()\n",
+        "plt.clf()\n",
+        "mw[\"paseng\"] = np.where(mw[\"asian_percent\"]>(sum(mw[\"asian_percent\"])/len(mw)),\"large\",\"small\")\n",
+        "mw[\"paseng\"] = mw[\"asian_percent\"].apply(lambda x: \"large\" if x > sum(mw[\"asian_percent\"])/len(mw) else \"small\")\n",
+        "mw[\"paseng\"].value_counts().plot.bar(rot=0)\n",
+        "plt.show()\n",
+        "plt.clf()"
+      ],
+      "id": "2aa1b541",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### P144\n"
+      ],
+      "id": "cd88e4b3"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt \n",
+        "import seaborn\n",
+        "import numpy as np    \n",
+        "\n",
+        "mpg_raw = pd.read_csv(\"mpg.csv\")\n",
+        "mpg = mpg_raw.copy()\n",
+        "\n",
+        "mpg[\"\"]\n"
+      ],
+      "id": "6a1b91be",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\DS\\python\\Python312\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

@@ -73,7 +73,7 @@ import numpy as np
 mpg_raw = pd.read_csv("mpg.csv")
 mpg = mpg_raw.copy()
 
-mpg[""]
+#mpg[""]
 
 
 
