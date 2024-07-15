@@ -48,12 +48,12 @@ midwest.info
 mw = midwest.copy()
 mw = mw.rename(columns = {"poptotal":"total","popasian":"asian"})
 mw["asian_percent"] = mw["asian"]/mw["total"]*100
-mw["asian_percent"].plot.bar(rot=0)
+mw["asian_percent"].plot.hist()
 plt.show()
 plt.clf()
 mw["paseng"] = np.where(mw["asian_percent"]>(sum(mw["asian_percent"])/len(mw)),"large","small")
 mw["paseng"] = mw["asian_percent"].apply(lambda x: "large" if x > sum(mw["asian_percent"])/len(mw) else "small")
-mw["paseng"].value_counts().plot.bar(rot=0)
+mw["paseng"].value_counts().plot.bar()
 plt.show()
 plt.clf()
 ```
@@ -69,10 +69,49 @@ import numpy as np
 mpg_raw = pd.read_csv("mpg.csv")
 mpg = mpg_raw.copy()
 
-#mpg[""]
+
+a4 = sum(mpg.query('displ <= 4')["hwy"])/len(mpg.query('displ <= 4')["hwy"])
+a4 = mpg.query('displ <= 4')["hwy"].mean()
+b5 = sum(mpg.query('displ >= 5')["hwy"])/len(mpg.query('displ >= 5')["hwy"])
+if a4 > b5 :
+    print("배기량 4 이하 자동차가 고속도로 연비 평균이 높습니다.")
+else :
+    print("배기량 5 이상 자동차가 고속도로 연비 평균이 높습니다.")
+
+mpg.info
+audi_cty_mean = mpg.query('manufacturer == "audi"')["cty"].mean()
+toyota_cty_mean = mpg.query('manufacturer == "toyota"')["cty"].mean()
+if audi_cty_mean > toyota_cty_mean :
+    print("audi의 도시 연비 평균이 높습니다.")
+else :
+    print("toyota의 도시 연비 평균이 높습니다.")
+
+print(mpg.query('manufacturer in ["chevorlet","ford","honda"]')['hwy'].mean())
 
 
+```
 
+### p150
 
+```{python}
+import pandas as pd
+import numpy as np    
+
+mpg_raw = pd.read_csv("mpg.csv")
+mpg = mpg_raw.copy()
+mpg[["category","cty"]]
+suv_cty_mean = mpg.query("category == 'suv'")['cty'].mean()
+com_cty_mean = mpg.query("category == 'compact'")['cty'].mean()
+
+if suv_cty_mean > com_cty_mean :
+    print("suv의 도시 연비 평균이 높습니다.")
+else :
+    print("compact의 도시 연비 평균이 높습니다.")
+
+```
+
+### p153
+
+```{python}
 
 ```
