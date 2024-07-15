@@ -1,0 +1,23 @@
+---
+title: "hw1"
+jupyter: python3
+type: website
+output-dir : docs
+---
+
+## 다음 표의 내용을 데이터 프레임으로 만들어 출력해 보세요.
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({"제품" : ["사과","딸기","수박"],
+"판매량" : [1800,1500,3000],
+"가격" : [24,38,13]}
+)
+
+mean_price = sum(df["판매량"])/len(df)
+mean_sold = sum(df["가격"])/len(df)
+
+
+
+```
