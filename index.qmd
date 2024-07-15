@@ -7,32 +7,76 @@ jupyter: python3
 
 \- **`Issac Lee, 2023`**
 
-
-
 ## 홈페이지 첫 화면입니다!
 
-안녕하세요, 데이터 분석 **중수** 이용규입니다.
+### 안녕하세요, **:):)** 이용규입니다.
 
-###오늘 배운 것 
+### Q1. 다음 표의 내용을 데이터 프레임으로 만들어 출력해 보세요.
 
-math 함수 <- math.fucntion            
-sqrt
-exp
-sin
-cos
-log
+### Q2. 앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과 판매량 평균을 구해 보세요. P84
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({"제품" : ["사과","딸기","수박"], "판매량" : [1800,1500,3000], "가격" : [24,38,13]} )
+
+mean_price = sum(df["판매량"])/len(df) 
+mean_sold = sum(df["가격"])/len(df)
+
+```
+
+### 
+
+### Q3,Q4,Q5 mpg 데이터를 이용해 분석 문제를 해결해 보세요. P115
+
+```{python}
+import pandas as pd
+
+df = pd.read_csv("mpg.csv")
+cmpg = df.copy()
+cmpg = cmpg.rename(columns = {"cty": "city","hwy":"highway"})
+cmpg
+
+```
+
+### Q6\~Q10 P130
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn
+import numpy as np    
+
+midwest = pd.read_csv("midwest.csv")
+midwest.info
+mw = midwest.copy()
+mw = mw.rename(columns = {"poptotal":"total","popasian":"asian"})
+mw["asian_percent"] = mw["asian"]/mw["total"]*100
+mw["asian_percent"].plot.bar(rot=0)
+plt.show()
+plt.clf()
+mw["paseng"] = np.where(mw["asian_percent"]>(sum(mw["asian_percent"])/len(mw)),"large","small")
+mw["paseng"] = mw["asian_percent"].apply(lambda x: "large" if x > sum(mw["asian_percent"])/len(mw) else "small")
+mw["paseng"].value_counts().plot.bar(rot=0)
+plt.show()
+plt.clf()
+```
+
+### P144
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn
+import numpy as np    
+
+mpg_raw = pd.read_csv("mpg.csv")
+mpg = mpg_raw.copy()
+
+mpg[""]
 
 
-array[] <- 벡터(집합 만들 수 있음)
-
-arange(x,y,z) <- x 부터 y 까지 z간격으로 
 
 
-linspace(x,y,z) <- x y z
 
-tile repeat
-
-np.repeat(array,num)
-np.tile(array,num)
-
-
+```
