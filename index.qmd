@@ -151,10 +151,25 @@ import pandas as pd
 
 mpg_raw = pd.read_csv("mpg.csv")
 mpg = mpg_raw
-
+mpg
 mpg.groupby("category").agg(mean_cty = ("cty","mean"))
 
 mpg.groupby("category").agg(mean_cty = ("cty","mean")).sort_values("mean_cty",ascending=False)
 
+mpg.groupby("manufacturer").agg(mean_hwy = ("hwy","mean")).sort_values("mean_hwy",ascending=False).head(3)
+
+print(mpg.query('category == "compact"')["manufacturer"].value_counts().sort_values(ascending=False))
+
+```
+
+### p173
+
+```{python}
+
+```
+
+### p176
+
+```{python}
 
 ```
