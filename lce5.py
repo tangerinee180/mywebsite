@@ -9,6 +9,8 @@ x[1] = 5
 x[2] = 3
 print("채워진 벡터:", x)
 
+x = x + [0,1,2]
+x
 #np.arange([start, ]stop, [step, ]dtype=None)
 #1. start: 배열의 시작값, 생략 시 0부터 시작합니다.
 #2. stop: 배열 생성을 멈출 종료값, 이 값은 배열에 포함되지 않습니다.
@@ -18,7 +20,7 @@ print("채워진 벡터:", x)
 arr1 = np.arange(10)
 print("Array from 0 to 9:", arr1)
 arr2 = np.arange(0, 2, 0.5)
-print("0부터 1.5가지 0.5 간격으로 발생:", arr2)
+print("0부터 1.5까지 0.5 간격으로 발생:", arr2)
 
 #numpy.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None)
 #1. start: 시퀀스의 시작값입니다.
@@ -30,7 +32,7 @@ print("0부터 1.5가지 0.5 간격으로 발생:", arr2)
 #repeat, tile 차이점
 
 linear_space1 = np.linspace(0, 1, 5)
-
+linear_space1
 print("0부터 1까지 5개 원소:", linear_space1)
 linear_space2 = np.linspace(0, 1, 5, endpoint=False)
 print("0부터 1까지 5개 원소, endpoint 제외:", linear_space2)
@@ -40,10 +42,13 @@ print("0부터 1까지 5개 원소, endpoint 제외:", linear_space2)
 #• repeats: 각 요소를 반복할 횟수입니다.
 #• axis: 반복을 적용할 축을 지정합니다. 기본값은 None으로, 배열을 평평하게 만든 후 반복합니다.
 
-a = np.array([1.0,2.0,3.0])
+
+a = np.array([[1.0,2.0,3.0],[20,30,40],[4,5,6]])
 b = 2.0
 a*b
-
+np.repeat(a,3,axis = 0)
+np.repeat(a,3,axis = 1)
+np.tile(a,3)
 a.shape
 #b.shape -> float 니까 shape 어트리뷰트 업슴
 
@@ -62,10 +67,11 @@ result = matrix + vector
 print("브로드캐스팅 결과:\n", result)
 
 # 세로 벡터 생성
-vector = np.array([1.0, 2.0, 3.0, 4.0]).reshape(4, 1)
+vector2 = np.array([1.0, 2.0, 3.0, 4.0]).reshape(4, 1)
+vector2
 # 브로드캐스팅을 이용한 배열 덧셈
-result = matrix + vector
-print("브로드캐스팅 결과:\n", result)
+result2 = matrix + vector2
+print("브로드캐스팅 결과:\n", result2)
 
 #(4,3) + (3,0) = o
 #(4,3) + (4,) = x
