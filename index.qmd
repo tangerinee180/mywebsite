@@ -165,11 +165,33 @@ print(mpg.query('category == "compact"')["manufacturer"].value_counts().sort_val
 ### p173
 
 ```{python}
+import pands as pd
 
+mpg_raw = pd.read_csv("mpg.csv")
+
+fuel = pd.DataFrame({"fl":["c","d","e","p","r"],\
+"price_fl" : [2.35,2.38,2.11,2.76,2.22]})
+
+mpg.columns
+
+mpg = pd.merge(mpg,fuel,how="left",on="fl")
+
+mpg[["model","fl","price_fl"]].head()
 ```
 
 ### p176
 
 ```{python}
+import pandas as pd
+import numpy as np
 
+df = pd.read_csv("midwest.csv")
+df
+df["popadults"]
+df["poptotal"]
+df["non_adult_pop"] = (df["poptotal"] - df["popadults"])/df["poptotal"] *100
+df.sort_values("non_adult_pop",ascending=False).head()
+df['na_grade'] = np.where(df["non_adult_pop"]>=40,"large",np.where(df["non_adult_pop"]>=30,"middle","small"))
+df["asian_pop"] = df["popasian"]/df["poptotal"]*100
+df.sort_values("asian_pop",ascending=True)[['county','state','asian_pop']].head(10)
 ```
