@@ -18,8 +18,13 @@ group_all = pd.merge(exam,name,how="left",on="nclass")
 group_all
 
 mpg_raw = pd.read_csv("mpg.csv")
+mpg = mpg_raw.copy()
 fuel = pd.DataFrame({"fl":["c","d","e","p","r"],\
 "price_fl" : [2.35,2.38,2.11,2.76,2.22]})
 mpg.columns
 mpg = pd.merge(mpg,fuel,how="left",on="fl")
 mpg[["model","fl","price_fl"]].head()
+
+mpg
+mpg.groupby(["manufacturer","drv"])\
+            .agg(mean_cty =("cty","mean"))
