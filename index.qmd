@@ -7,9 +7,6 @@ about:
     template: jolla
     image: logo.webp
     links: 
-      - icon: twitter 
-        text: twitter
-        href: https://twitter.com
       - icon: github
         text: Github
         href: https://github.com/tangerinee180
