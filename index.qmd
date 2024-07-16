@@ -122,5 +122,39 @@ else :
 ### p153
 
 ```{python}
+import pandas as pd
+mpg = pd.read_csv("mpg.csv")
+mpg.query('manufacturer == "audi"').sort_values("hwy",ascending=False).head()
+mpg[mpg["manufacturer"]== "audi"].sort_values("hwy",ascending=False).head()
+```
+
+### p158
+
+```{python}
+
+mpg_raw = pd.read_csv("mpg.csv")
+mpg = mpg_raw.copy()
+mpg.assign(sum_ty = lambda x : x['cty'] + x["hwy"],
+ave_ty = lambda x : x['sum_ty']/2).sort_values("ave_ty",ascending=False).head(3)
+mpg = mpg.assign(sum_ty = lambda x : x['cty'] + x["hwy"],
+ave_ty = lambda x : x['sum_ty']/2)
+
+mpg.sort_values("ave_ty").head(3)
+```
+
+### 
+
+### p166
+
+```{python}
+import pandas as pd
+
+mpg_raw = pd.read_csv("mpg.csv")
+mpg = mpg_raw
+
+mpg.groupby("category").agg(mean_cty = ("cty","mean"))
+
+mpg.groupby("category").agg(mean_cty = ("cty","mean")).sort_values("mean_cty",ascending=False)
+
 
 ```
