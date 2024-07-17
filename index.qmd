@@ -185,6 +185,8 @@ mpg[["model","fl","price_fl"]].head()
 import pandas as pd
 import numpy as np
 
+a = np.array(1)
+type(a)
 df = pd.read_csv("midwest.csv")
 df
 df["popadults"]
@@ -195,3 +197,5 @@ df['na_grade'] = np.where(df["non_adult_pop"]>=40,"large",np.where(df["non_adult
 df["asian_pop"] = df["popasian"]/df["poptotal"]*100
 df.sort_values("asian_pop",ascending=True)[['county','state','asian_pop']].head(10)
 ```
+
+def change_type(df, dtype_dict): for a, dtype in dtype_dict.items(): df\[col\] = df\[col\].astype(dtype) return df
