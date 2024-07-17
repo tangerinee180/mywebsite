@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HW1 – testwebsite</title>
+<title>HI!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +101,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -115,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">testwebsite</span>
+    <span class="navbar-title">HI!</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,8 +132,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./hw2.html"> 
+<span class="menu-text">hw2</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">about</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HW1</h1>
+<h1 class="title">HI!</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -164,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="q2.-앞에서-만든-데이터-프레임을-이용해-과일의-가격-평균과-판매량-평균을-구해-보세요.-p84" class="level3">
 <h3 data-anchor-id="q2.-앞에서-만든-데이터-프레임을-이용해-과일의-가격-평균과-판매량-평균을-구해-보세요.-p84">Q2. 앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과 판매량 평균을 구해 보세요. P84</h3>
-<div id="4d4f4ade" class="cell" data-execution_count="1">
+<div id="3ef0ac9c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"제품"</span> : [<span class="st">"사과"</span>,<span class="st">"딸기"</span>,<span class="st">"수박"</span>], <span class="st">"판매량"</span> : [<span class="dv">1800</span>,<span class="dv">1500</span>,<span class="dv">3000</span>], <span class="st">"가격"</span> : [<span class="dv">24</span>,<span class="dv">38</span>,<span class="dv">13</span>]} )</span>
@@ -178,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="q3q4q5-mpg-데이터를-이용해-분석-문제를-해결해-보세요.-p115" class="level3">
 <h3 data-anchor-id="q3q4q5-mpg-데이터를-이용해-분석-문제를-해결해-보세요.-p115">Q3,Q4,Q5 mpg 데이터를 이용해 분석 문제를 해결해 보세요. P115</h3>
-<div id="9aa793a9" class="cell" data-execution_count="2">
+<div id="684a3d92" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"mpg.csv"</span>)</span>
@@ -369,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="q6q10-p130" class="level3">
 <h3 data-anchor-id="q6q10-p130">Q6~Q10 P130</h3>
-<div id="3baa04a8" class="cell" data-execution_count="3">
+<div id="e4423f77" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn</span>
@@ -409,7 +416,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="p144" class="level3">
 <h3 data-anchor-id="p144">P144</h3>
-<div id="10733f68" class="cell" data-execution_count="4">
+<div id="c58fb998" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn</span>
@@ -445,7 +452,7 @@ toyota의 도시 연비 평균이 높습니다.
 </section>
 <section id="p150" class="level3">
 <h3 data-anchor-id="p150">p150</h3>
-<div id="1b63ea10" class="cell" data-execution_count="5">
+<div id="f9579c6e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np    </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -466,6 +473,385 @@ toyota의 도시 연비 평균이 높습니다.
 </section>
 <section id="p153" class="level3">
 <h3 data-anchor-id="p153">p153</h3>
+<div id="572cfc72" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> pd.read_csv(<span class="st">"mpg.csv"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mpg.query(<span class="st">'manufacturer == "audi"'</span>).sort_values(<span class="st">"hwy"</span>,ascending<span class="op">=</span><span class="va">False</span>).head()</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>mpg[mpg[<span class="st">"manufacturer"</span>]<span class="op">==</span> <span class="st">"audi"</span>].sort_values(<span class="st">"hwy"</span>,ascending<span class="op">=</span><span class="va">False</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">manufacturer</th>
+<th data-quarto-table-cell-role="th">model</th>
+<th data-quarto-table-cell-role="th">displ</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">cyl</th>
+<th data-quarto-table-cell-role="th">trans</th>
+<th data-quarto-table-cell-role="th">drv</th>
+<th data-quarto-table-cell-role="th">cty</th>
+<th data-quarto-table-cell-role="th">hwy</th>
+<th data-quarto-table-cell-role="th">fl</th>
+<th data-quarto-table-cell-role="th">category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>audi</td>
+<td>a4</td>
+<td>2.0</td>
+<td>2008</td>
+<td>4</td>
+<td>manual(m6)</td>
+<td>f</td>
+<td>20</td>
+<td>31</td>
+<td>p</td>
+<td>compact</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>audi</td>
+<td>a4</td>
+<td>2.0</td>
+<td>2008</td>
+<td>4</td>
+<td>auto(av)</td>
+<td>f</td>
+<td>21</td>
+<td>30</td>
+<td>p</td>
+<td>compact</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>audi</td>
+<td>a4</td>
+<td>1.8</td>
+<td>1999</td>
+<td>4</td>
+<td>manual(m5)</td>
+<td>f</td>
+<td>21</td>
+<td>29</td>
+<td>p</td>
+<td>compact</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>audi</td>
+<td>a4</td>
+<td>1.8</td>
+<td>1999</td>
+<td>4</td>
+<td>auto(l5)</td>
+<td>f</td>
+<td>18</td>
+<td>29</td>
+<td>p</td>
+<td>compact</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>audi</td>
+<td>a4 quattro</td>
+<td>2.0</td>
+<td>2008</td>
+<td>4</td>
+<td>manual(m6)</td>
+<td>4</td>
+<td>20</td>
+<td>28</td>
+<td>p</td>
+<td>compact</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="p158" class="level3">
+<h3 data-anchor-id="p158">p158</h3>
+<div id="4ddb0f84" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mpg_raw <span class="op">=</span> pd.read_csv(<span class="st">"mpg.csv"</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> mpg_raw.copy()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>mpg.assign(sum_ty <span class="op">=</span> <span class="kw">lambda</span> x : x[<span class="st">'cty'</span>] <span class="op">+</span> x[<span class="st">"hwy"</span>],</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>ave_ty <span class="op">=</span> <span class="kw">lambda</span> x : x[<span class="st">'sum_ty'</span>]<span class="op">/</span><span class="dv">2</span>).sort_values(<span class="st">"ave_ty"</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">3</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> mpg.assign(sum_ty <span class="op">=</span> <span class="kw">lambda</span> x : x[<span class="st">'cty'</span>] <span class="op">+</span> x[<span class="st">"hwy"</span>],</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>ave_ty <span class="op">=</span> <span class="kw">lambda</span> x : x[<span class="st">'sum_ty'</span>]<span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>mpg.sort_values(<span class="st">"ave_ty"</span>).head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">manufacturer</th>
+<th data-quarto-table-cell-role="th">model</th>
+<th data-quarto-table-cell-role="th">displ</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">cyl</th>
+<th data-quarto-table-cell-role="th">trans</th>
+<th data-quarto-table-cell-role="th">drv</th>
+<th data-quarto-table-cell-role="th">cty</th>
+<th data-quarto-table-cell-role="th">hwy</th>
+<th data-quarto-table-cell-role="th">fl</th>
+<th data-quarto-table-cell-role="th">category</th>
+<th data-quarto-table-cell-role="th">sum_ty</th>
+<th data-quarto-table-cell-role="th">ave_ty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">54</td>
+<td>dodge</td>
+<td>dakota pickup 4wd</td>
+<td>4.7</td>
+<td>2008</td>
+<td>8</td>
+<td>auto(l5)</td>
+<td>4</td>
+<td>9</td>
+<td>12</td>
+<td>e</td>
+<td>pickup</td>
+<td>21</td>
+<td>10.5</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">59</td>
+<td>dodge</td>
+<td>durango 4wd</td>
+<td>4.7</td>
+<td>2008</td>
+<td>8</td>
+<td>auto(l5)</td>
+<td>4</td>
+<td>9</td>
+<td>12</td>
+<td>e</td>
+<td>suv</td>
+<td>21</td>
+<td>10.5</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">69</td>
+<td>dodge</td>
+<td>ram 1500 pickup 4wd</td>
+<td>4.7</td>
+<td>2008</td>
+<td>8</td>
+<td>manual(m6)</td>
+<td>4</td>
+<td>9</td>
+<td>12</td>
+<td>e</td>
+<td>pickup</td>
+<td>21</td>
+<td>10.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="section-1" class="level3">
+<h3 data-anchor-id="section-1"></h3>
+</section>
+<section id="p166" class="level3">
+<h3 data-anchor-id="p166">p166</h3>
+<div id="40785247" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>mpg_raw <span class="op">=</span> pd.read_csv(<span class="st">"mpg.csv"</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> mpg_raw</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>mpg</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>mpg.groupby(<span class="st">"category"</span>).agg(mean_cty <span class="op">=</span> (<span class="st">"cty"</span>,<span class="st">"mean"</span>))</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>mpg.groupby(<span class="st">"category"</span>).agg(mean_cty <span class="op">=</span> (<span class="st">"cty"</span>,<span class="st">"mean"</span>)).sort_values(<span class="st">"mean_cty"</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>mpg.groupby(<span class="st">"manufacturer"</span>).agg(mean_hwy <span class="op">=</span> (<span class="st">"hwy"</span>,<span class="st">"mean"</span>)).sort_values(<span class="st">"mean_hwy"</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">3</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mpg.query(<span class="st">'category == "compact"'</span>)[<span class="st">"manufacturer"</span>].value_counts().sort_values(ascending<span class="op">=</span><span class="va">False</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>manufacturer
+audi          15
+volkswagen    14
+toyota        12
+subaru         4
+nissan         2
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<section id="p173" class="level3">
+<h3 data-anchor-id="p173">p173</h3>
+<div id="e4ff649f" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>mpg_raw <span class="op">=</span> pd.read_csv(<span class="st">"mpg.csv"</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>fuel <span class="op">=</span> pd.DataFrame({<span class="st">"fl"</span>:[<span class="st">"c"</span>,<span class="st">"d"</span>,<span class="st">"e"</span>,<span class="st">"p"</span>,<span class="st">"r"</span>],<span class="op">\</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="st">"price_fl"</span> : [<span class="fl">2.35</span>,<span class="fl">2.38</span>,<span class="fl">2.11</span>,<span class="fl">2.76</span>,<span class="fl">2.22</span>]})</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>mpg.columns</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> pd.merge(mpg,fuel,how<span class="op">=</span><span class="st">"left"</span>,on<span class="op">=</span><span class="st">"fl"</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>mpg[[<span class="st">"model"</span>,<span class="st">"fl"</span>,<span class="st">"price_fl"</span>]].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">model</th>
+<th data-quarto-table-cell-role="th">fl</th>
+<th data-quarto-table-cell-role="th">price_fl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>a4</td>
+<td>p</td>
+<td>2.76</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>a4</td>
+<td>p</td>
+<td>2.76</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>a4</td>
+<td>p</td>
+<td>2.76</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>a4</td>
+<td>p</td>
+<td>2.76</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>a4</td>
+<td>p</td>
+<td>2.76</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="p176" class="level3">
+<h3 data-anchor-id="p176">p176</h3>
+<div id="db89747b" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array(<span class="dv">1</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(a)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"midwest.csv"</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>df</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"popadults"</span>]</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"poptotal"</span>]</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"non_adult_pop"</span>] <span class="op">=</span> (df[<span class="st">"poptotal"</span>] <span class="op">-</span> df[<span class="st">"popadults"</span>])<span class="op">/</span>df[<span class="st">"poptotal"</span>] <span class="op">*</span><span class="dv">100</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>df.sort_values(<span class="st">"non_adult_pop"</span>,ascending<span class="op">=</span><span class="va">False</span>).head()</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'na_grade'</span>] <span class="op">=</span> np.where(df[<span class="st">"non_adult_pop"</span>]<span class="op">&gt;=</span><span class="dv">40</span>,<span class="st">"large"</span>,np.where(df[<span class="st">"non_adult_pop"</span>]<span class="op">&gt;=</span><span class="dv">30</span>,<span class="st">"middle"</span>,<span class="st">"small"</span>))</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"asian_pop"</span>] <span class="op">=</span> df[<span class="st">"popasian"</span>]<span class="op">/</span>df[<span class="st">"poptotal"</span>]<span class="op">*</span><span class="dv">100</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>df.sort_values(<span class="st">"asian_pop"</span>,ascending<span class="op">=</span><span class="va">True</span>)[[<span class="st">'county'</span>,<span class="st">'state'</span>,<span class="st">'asian_pop'</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">county</th>
+<th data-quarto-table-cell-role="th">state</th>
+<th data-quarto-table-cell-role="th">asian_pop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">404</td>
+<td>MENOMINEE</td>
+<td>WI</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">105</td>
+<td>BENTON</td>
+<td>IN</td>
+<td>0.010592</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">109</td>
+<td>CARROLL</td>
+<td>IN</td>
+<td>0.015950</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">358</td>
+<td>VINTON</td>
+<td>OH</td>
+<td>0.027032</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">390</td>
+<td>IRON</td>
+<td>WI</td>
+<td>0.032504</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">85</td>
+<td>SCOTT</td>
+<td>IL</td>
+<td>0.053154</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">112</td>
+<td>CLAY</td>
+<td>IN</td>
+<td>0.060716</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">261</td>
+<td>OSCODA</td>
+<td>MI</td>
+<td>0.063759</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">340</td>
+<td>PERRY</td>
+<td>OH</td>
+<td>0.066546</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">73</td>
+<td>PIATT</td>
+<td>IL</td>
+<td>0.070749</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>def change_type(df, dtype_dict): for a, dtype in dtype_dict.items(): df[col] = df[col].astype(dtype) return df</p>
 
 
 </section>

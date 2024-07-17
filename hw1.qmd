@@ -10,14 +10,43 @@ output-dir : docs
 ```{python}
 import pandas as pd
 
-df = pd.DataFrame({"제품" : ["사과","딸기","수박"],
-"판매량" : [1800,1500,3000],
-"가격" : [24,38,13]}
-)
+df = pd.DataFrame({"제품" : ["사과","딸기","수박"], "판매량" : [1800,1500,3000], "가격" : [24,38,13]} )
 
-mean_price = sum(df["판매량"])/len(df)
+mean_price = sum(df["판매량"])/len(df) 
 mean_sold = sum(df["가격"])/len(df)
+```
 
+### p115
 
+```{python}
+import pandas as pd
 
+df = pd.read_csv("mpg.csv")
+cmpg = df.copy()
+cmpg = cmpg.rename(columns = {"cty": "city","hwy":"highway"})
+cmpg
+
+```
+
+### p130
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn
+import numpy as np    
+
+midwest = pd.read_csv("midwest.csv")
+midwest.info
+mw = midwest.copy()
+mw = mw.rename(columns = {"poptotal":"total","popasian":"asian"})
+mw["asian_percent"] = mw["asian"]/mw["total"]*100
+mw["asian_percent"].plot.hist()
+plt.show()
+plt.clf()
+mw["paseng"] = np.where(mw["asian_percent"]>(sum(mw["asian_percent"])/len(mw)),"large","small")
+mw["paseng"] = mw["asian_percent"].apply(lambda x: "large" if x > sum(mw["asian_percent"])/len(mw) else "small")
+mw["paseng"].value_counts().plot.bar()
+plt.show()
+plt.clf()
 ```

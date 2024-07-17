@@ -1,5 +1,5 @@
 ---
-title: "HW1"
+title: "HI!"
 jupyter: python3
 toc: false
 about: 
@@ -165,7 +165,7 @@ print(mpg.query('category == "compact"')["manufacturer"].value_counts().sort_val
 ### p173
 
 ```{python}
-import pands as pd
+import pandas as pd
 
 mpg_raw = pd.read_csv("mpg.csv")
 

@@ -5,7 +5,7 @@ toc: false
 about: 
     id: hero-heading
     template: jolla
-    image: duck.jpg
+    image: duck2.jpg
     links: 
       - icon: github
         text: Github
